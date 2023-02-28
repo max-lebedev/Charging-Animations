@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="Charge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="a68-bh-swv">
+                                <rect key="frame" x="176" y="50" width="62" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="8eE-hA-3Ib"/>
+                                    <constraint firstAttribute="height" constant="13" id="r9s-8L-hgC"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p2y-fU-V58">
+                                <rect key="frame" x="15" y="67" width="384" height="737"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a68-bh-swv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7WU-x8-aop"/>
+                            <constraint firstItem="p2y-fU-V58" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.585575" constant="257.99965000000003" id="CHR-Cp-yrh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p2y-fU-V58" secondAttribute="trailing" constant="15" id="NJV-Xs-mk4"/>
+                            <constraint firstItem="p2y-fU-V58" firstAttribute="top" secondItem="a68-bh-swv" secondAttribute="bottom" constant="4" id="gB2-bR-jrP"/>
+                            <constraint firstItem="a68-bh-swv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="6" id="qGF-lY-70t"/>
+                            <constraint firstItem="p2y-fU-V58" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="qvo-0Z-QUN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="snf-lN-bIc"/>
+                    <connections>
+                        <outlet property="settingsTableView" destination="p2y-fU-V58" id="FBh-yT-zvf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Line" width="46" height="2"/>
+    </resources>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainMenuCell" id="pGR-Ep-7de" customClass="MainMenuCell" customModule="Charge_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pxf-Dd-afT">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="291"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animation" translatesAutoresizingMaskIntoConstraints="NO" id="9eS-iB-LEd">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="291"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="nKg-xI-O11">
+                        <rect key="frame" x="112" y="10" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1ni-qA-j6U"/>
+                            <constraint firstAttribute="width" constant="30" id="Qwe-Sx-3lM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9eS-iB-LEd" secondAttribute="trailing" id="1ww-v4-mEl"/>
+                    <constraint firstAttribute="trailing" secondItem="nKg-xI-O11" secondAttribute="trailing" constant="10" id="53C-hu-TwY"/>
+                    <constraint firstAttribute="bottom" secondItem="9eS-iB-LEd" secondAttribute="bottom" id="SGr-Zl-gam"/>
+                    <constraint firstItem="nKg-xI-O11" firstAttribute="top" secondItem="pxf-Dd-afT" secondAttribute="top" constant="10" id="bk0-Vi-jmF"/>
+                    <constraint firstItem="9eS-iB-LEd" firstAttribute="top" secondItem="pxf-Dd-afT" secondAttribute="top" id="eqO-UE-mRb"/>
+                    <constraint firstItem="9eS-iB-LEd" firstAttribute="leading" secondItem="pxf-Dd-afT" secondAttribute="leading" id="wVP-OV-wS0"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="152" height="291"/>
+            <connections>
+                <outlet property="animationImage" destination="9eS-iB-LEd" id="ywc-dM-fb3"/>
+                <outlet property="cellsBackgroundView" destination="pxf-Dd-afT" id="HTJ-XS-gEH"/>
+                <outlet property="checkImage" destination="nKg-xI-O11" id="XYg-Te-8d0"/>
+            </connections>
+            <point key="canvasLocation" x="60.869565217391312" y="142.96875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Check" width="40" height="40"/>
+        <image name="animation" width="155" height="305"/>
+    </resources>
+</document>

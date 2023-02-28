@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BottomPopup",
+        "repositoryURL": "https://github.com/ergunemr/BottomPopup",
+        "state": {
+          "branch": null,
+          "revision": "35c6b3c24233c96a96ccc2716e92ac1096b0e6dd",
+          "version": "0.7.0"
+        }
+      },
+      {
+        "package": "KDCircularProgress",
+        "repositoryURL": "https://github.com/kaandedeoglu/KDCircularProgress",
+        "state": {
+          "branch": null,
+          "revision": "a0f30e0605b7ac91ac1b243efd9914b3fd592ad3",
+          "version": "1.5.4"
+        }
+      },
+      {
+        "package": "Lottie",
+        "repositoryURL": "https://github.com/airbnb/lottie-ios",
+        "state": {
+          "branch": null,
+          "revision": "4a6058cbbdfe4f74aeae92c8bd51ad3b0de2a1ee",
+          "version": "3.3.0"
+        }
+      },
+      {
+        "package": "SwiftyUserDefaults",
+        "repositoryURL": "https://github.com/sunshinejr/SwiftyUserDefaults.git",
+        "state": {
+          "branch": null,
+          "revision": "f66bcd04088582c8fbb5cb8554d577e303bae396",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "TableKit",
+        "repositoryURL": "https://github.com/maxsokolov/TableKit",
+        "state": {
+          "branch": null,
+          "revision": "8bf4840d9d0475a92352f02f368f88b74eced447",
+          "version": "2.11.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
