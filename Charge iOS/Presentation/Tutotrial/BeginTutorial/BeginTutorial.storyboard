@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Begin Tutorial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="BeginTutorialViewController" customModule="Charge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="TQ3-Ky-0ru">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwJ-Kj-6py">
+                                <rect key="frame" x="327" y="4" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="RaG-7B-ZAk"/>
+                                    <constraint firstAttribute="height" constant="28" id="lGI-ja-6a2"/>
+                                </constraints>
+                                <color key="tintColor" name="WhiteColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="closeButton">
+                                    <color key="titleColor" name="WhiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bP7-Yt-QHu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Q-Xj-BCx">
+                                <rect key="frame" x="34" y="590" width="307" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Fle-df-H66"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Продолжить" backgroundImage="ContinueButton"/>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Lkr-gd-5Sq"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sgD-DV-CuH">
+                                <rect key="frame" x="34" y="52" width="307" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charging animation работает с приложением команды от Apple" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QUr-WP-nJZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="fRI-Bb-nUW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="19"/>
+                                        <color key="textColor" name="WhiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Так мы определяем, когда ваше устройство подключается к зарядке" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-6Y-Ahb">
+                                        <rect key="frame" x="0.0" y="66" width="307" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="rfc-UN-7eO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" name="WhiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-yB-tD1">
+                                <rect key="frame" x="34" y="376" width="307" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="RY5-nr-zFu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Открыть команды" backgroundImage="tutorialButton"/>
+                                <connections>
+                                    <action selector="openShortcutsButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="u2n-ny-qO5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-fn-MeE">
+                                <rect key="frame" x="34" y="469" width="307" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="3Sn-Hd-40Y"/>
+                                </constraints>
+                                <string key="text">Всю настройку приложения нужно будет проводить в Командах, для удобства мы разместили кнопку “Открыть Команды” на каждом экране инструкции</string>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" name="WhiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openShortcuts" translatesAutoresizingMaskIntoConstraints="NO" id="KGF-Jm-Nbh">
+                                <rect key="frame" x="91" y="168" width="193" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KGF-Jm-Nbh" secondAttribute="height" multiplier="287:298" id="6jS-S7-TNa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="199" id="jkS-pg-ln7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TQ3-Ky-0ru" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2I1-pm-G3b"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dwJ-Kj-6py" secondAttribute="trailing" constant="20" id="7Fl-GN-T2R"/>
+                            <constraint firstItem="sgD-DV-CuH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="7QF-UW-LPo"/>
+                            <constraint firstItem="h3W-fn-MeE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="8Kn-47-80t"/>
+                            <constraint firstAttribute="trailing" secondItem="h3W-fn-MeE" secondAttribute="trailing" constant="34" id="8y3-wj-Agx"/>
+                            <constraint firstAttribute="bottom" secondItem="TQ3-Ky-0ru" secondAttribute="bottom" id="90b-ct-QI9"/>
+                            <constraint firstItem="O7Q-Xj-BCx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="9oO-WK-udg"/>
+                            <constraint firstAttribute="trailing" secondItem="sgD-DV-CuH" secondAttribute="trailing" constant="34" id="BJx-c5-Dll"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="O7Q-Xj-BCx" secondAttribute="bottom" constant="20" id="Ihb-oU-AvL"/>
+                            <constraint firstItem="h3W-fn-MeE" firstAttribute="top" secondItem="6ed-yB-tD1" secondAttribute="bottom" constant="36" id="Kdn-yE-2fO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6ed-yB-tD1" secondAttribute="trailing" constant="34" id="TnL-px-oYg"/>
+                            <constraint firstItem="KGF-Jm-Nbh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UrF-zX-iKc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O7Q-Xj-BCx" secondAttribute="trailing" constant="34" id="WnR-FH-DiC"/>
+                            <constraint firstItem="TQ3-Ky-0ru" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Xv8-uV-DbV"/>
+                            <constraint firstItem="6ed-yB-tD1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="gHn-cE-zZ7"/>
+                            <constraint firstItem="dwJ-Kj-6py" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="4" id="iAd-59-aLb"/>
+                            <constraint firstItem="KGF-Jm-Nbh" firstAttribute="top" secondItem="sgD-DV-CuH" secondAttribute="bottom" constant="11" id="kYg-qc-RF9"/>
+                            <constraint firstItem="O7Q-Xj-BCx" firstAttribute="top" secondItem="h3W-fn-MeE" secondAttribute="bottom" constant="44" id="ldM-dL-RFX"/>
+                            <constraint firstItem="sgD-DV-CuH" firstAttribute="top" secondItem="dwJ-Kj-6py" secondAttribute="bottom" constant="20" id="rNp-up-XJQ"/>
+                            <constraint firstItem="6ed-yB-tD1" firstAttribute="top" secondItem="KGF-Jm-Nbh" secondAttribute="bottom" constant="8" id="uze-3R-hoe"/>
+                            <constraint firstItem="TQ3-Ky-0ru" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="vGZ-Fh-dW3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beginTutorialFirstLabel" destination="zdB-6Y-Ahb" id="ncP-XR-tmR"/>
+                        <outlet property="beginTutorialSecondLabel" destination="h3W-fn-MeE" id="c08-cO-7ci"/>
+                        <outlet property="beginTutorialTitle" destination="QUr-WP-nJZ" id="IwV-8L-DRf"/>
+                        <outlet property="continueButton" destination="O7Q-Xj-BCx" id="I9O-53-zmM"/>
+                        <outlet property="openShortcutsButton" destination="6ed-yB-tD1" id="kYd-ZX-glG"/>
+                        <outlet property="shortcutsImage" destination="KGF-Jm-Nbh" id="mon-Ic-X0r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="76.011994002998506"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="812"/>
+        <image name="ContinueButton" width="317" height="52"/>
+        <image name="closeButton" width="22" height="22"/>
+        <image name="openShortcuts" width="287" height="254"/>
+        <image name="tutorialButton" width="317" height="52"/>
+        <namedColor name="WhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

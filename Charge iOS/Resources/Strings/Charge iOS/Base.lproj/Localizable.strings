@@ -1,0 +1,80 @@
+/* 
+  Localazible.strings
+  Charge iOS
+
+  Created by Максим Лебедев on 24.01.2022.
+  
+*/
+
+// Onboarding
+"firstOnboardingTitle"  = "Charging Animation";
+"secondOnboardingTitle"  = "Instructions";
+"firstOnboardingSubtitle"  = "Make the charging process unusual, decorate the screen with a beautiful animation";
+"secondOnboardingSubtitle"  = "When you choose an animation, do not ignore the setting of the application, this will allow it to work correctly";
+"continue"  = "Continue";
+"ok"  = "OK";
+//paywall"
+"premiumSubscription"  = "Premium Subscription";
+"restore"  = "Restore purchase";
+"terms of use"  = "Terms of Use";
+"privacy policy"  = "Privacy Policy";
+"firstSubAdv"  = "No Ads";
+"secondSubAdv"  = "Priority Support";
+"thirdSubAdv"  = "Early Updates";
+"firstSubAdvInfo"  = "You will be able to use the app without ads";
+"secondSubAdvInfo"  = "Your requests will be a priority";
+"thirdSubAdvInfo"  = "Early access to all new features and animations";
+"start with 3 days trial"  = "Try 3 days for free";
+"perMonth"  = "/month";
+"per3Month"  = "/3 months";
+"sale"  = "Benefit";
+"Paywall.Alert.Sucess.title" = "Purchases restore sucessful";
+"Paywall.Alert.Sucess.subtitle" = "Your subscription has been restored";
+"Paywall.Alert.Failure.title" = "Purchases restore failed";
+"Paywall.Alert.Failure.subtitle" = "Make sure you bought a subscription and try again";
+//MainMenu"
+"Charging animation"  = "Charging Animation";
+"tutorial"  = "Setup Instructions";
+"animationGallery"  = "Animation Gallery";
+//Settings
+"settingsTutorial"  = "Tutorial";
+"buyPremium"  = "Become Premium";
+"share"  = "Share";
+"rateUs"  = "Rate Us";
+"contactUs"  = "Contact support";
+"settingsPrivacyPolicy"  = "Privacy Policy";
+"settingsTermsOfUse"  = "Terms Of Use";
+//animation"
+"preview"  = "Preview";
+"batteryLevel"  = "Show charge percentage";
+"dateAndTime"  = "Show date and time";
+"sound"  = "Animation Sound";
+"setupApp"  = "Set up the app";
+"setupText"  = "To enjoy the charging animations you need to take a couple of minutes and set up the app\n\nIt's not difficult, we made a detailed instruction for you\n\Without setting up the animations won't appear, but if you want to set up the app later, the instruction is always at hand, on the home screen";
+"start"  = "Shall we begin? 😍";
+"notNow"  = "Not now";
+"startButton"  = "Start";
+"setupAnimation"  = "Set up animation";
+//tuttorial
+"initialTutorialTitle"  = "Charging animation functions with Apple's Shortcuts app";
+"initialTutorialText"  = "This is how we determine when your device is plugged in to charge";
+"initialTutorialSecondText"  = "All of the app setup will need to be done in Shortcuts, for convenience we've placed an 'Open Shortcuts' button on each instruction screen";
+"firstTutorial"  = "1. Click the Automation button at the bottom of the screen\n\n2. Then click Create Automation for myself, or if you don't see that button on your screen, click the '+' in the upper right corner of the screen, and then click Create Automation for myself";
+"secondTutorial"  = "1. Scroll down a bit and press Charger\n\n2. Next, verify that Connected is selected and click Next at the top right\n\n3. On the screen that appears, click Add Action";
+"thirdTutorial"  = "1. Switch to Apps\n\n2. Locate the icon for our app and click on it\n\n3,4. Select Charging Effects and click Next in the upper right corner";
+"fourthTutorial"  = "1. Toggle the Ask before starting setting to Off\n\n2. In the pop-up window, click Don't Ask\n\n3. Click Done in the upper right corner";
+"fifthTutorial"  = "Yay! Now we just need to check if everything is set up and working correctly\n\nPlace the phone on charge and we'll check if it's set up correctly";
+"successTutorialTitle"  = "Everything works great!";
+"successTutorialText"  = "Now you can select any animation and it will appear when you connect your device to the charger";
+"wrongSetupTitle"  = "Oops! Something went wrong when setting up the app";
+"wrongSetup"  = "Check all the steps again or go through the setup again\n\nIf it doesn't work, you can contact our support team and we'll be sure to help you";
+"skipTestTitle"  = "Setup completed without verification";
+"skipTest"  = "We hope you followed our setup instructions and that the charging animation will make you happy as soon as you put your phone on charge\n\nIf the animation you selected does not appear when you connect your device to the charger, we recommend checking all setup steps again or contact our support team";
+"dontWorry"  = "No worries!";
+"helpFirstText"  = "Try to check if you went through all the steps correctly, go through them again and everything will work out!";
+"helpSecondtext"  = "P.S. If it still doesn't work, email our support and we'll help you with the setup 💛";
+"openShortcuts"  = "Open Shortcuts";
+"dosntWork"  = "It's not working";
+"later"  = "Later";
+"ready"  = "Done";
+"setupAgain"  = "Go through the setup again";

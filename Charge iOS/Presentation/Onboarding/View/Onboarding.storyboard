@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="Charge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="njc-id-2mN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-Zh-kqn">
+                                <rect key="frame" x="26" y="71" width="362" height="664"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2qd-j3-cDS">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O28-iF-Vys">
+                                <rect key="frame" x="34" y="785" width="346" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="DrF-U1-dfZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Продолжить" backgroundImage="ContinueButton"/>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cD9-Va-khb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="O28-iF-Vys" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="2ma-6Q-WUa"/>
+                            <constraint firstItem="njc-id-2mN" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="8d6-kr-GvO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dVt-Zh-kqn" secondAttribute="trailing" constant="26" id="8pU-Rn-QgR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="O28-iF-Vys" secondAttribute="bottom" constant="20" id="Aag-pS-oQl"/>
+                            <constraint firstItem="dVt-Zh-kqn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="27" id="PMm-aS-y9Y"/>
+                            <constraint firstItem="O28-iF-Vys" firstAttribute="top" secondItem="dVt-Zh-kqn" secondAttribute="bottom" constant="50" id="VGk-de-IRf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O28-iF-Vys" secondAttribute="trailing" constant="34" id="ZaM-0S-Zsc"/>
+                            <constraint firstItem="njc-id-2mN" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="g73-D2-eDo"/>
+                            <constraint firstItem="njc-id-2mN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="odk-Hg-AVF"/>
+                            <constraint firstAttribute="bottom" secondItem="njc-id-2mN" secondAttribute="bottom" id="uW3-15-Cax"/>
+                            <constraint firstItem="dVt-Zh-kqn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="wns-g3-9PH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="O28-iF-Vys" id="i3e-DD-KO4"/>
+                        <outlet property="onboardingCollectionView" destination="dVt-Zh-kqn" id="ZjP-bD-Bzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="812"/>
+        <image name="ContinueButton" width="317" height="52"/>
+    </resources>
+</document>
