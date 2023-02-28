@@ -1,0 +1,33 @@
+strings:
+  inputs: Charge iOS/Resources/Strings/Charge iOS/ru.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: Charge iOS/Resources/Strings/String+Localize.swift
+
+xcassets:
+  inputs: Charge iOS/Resources/Assets/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Charge iOS/Resources/Assets/Assets.swift
+    
+ib:
+  inputs: Charge iOS
+  outputs:
+    templateName: scenes-swift5
+    output: Charge iOS/Resources/Storyboards/Storyboards.swift
+
+fonts:
+  inputs: Charge iOS
+  outputs:
+    templateName: swift5
+    output: Charge iOS/Resources/Fonts/Fonts.swift
+ 
+  
+#strings:
+#  inputs: HydraSDKDemo/Resources/Strings/en.lproj
+#  outputs:
+#    templateName: structured-swift4
+#    output: HydraSDKDemo/Resources/Strings/Strings.swift
+
+
+
